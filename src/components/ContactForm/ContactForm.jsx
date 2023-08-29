@@ -6,7 +6,7 @@ const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
     .matches(
-      /^[a-zA-Zа-яА-ЯіІєЄїЇ]+(([' \-][a-zA-Zа-яА-ЯіІєЄїЇ ])?[a-zA-Zа-яА-ЯіІєЄїЇ]*)*$/,
+      /^[a-zA-Zа-яА-ЯіІєЄїЇ]+(([' -][a-zA-Zа-яА-ЯіІєЄїЇ ])?[a-zA-Zа-яА-ЯіІєЄїЇ]*)*$/,
       "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
     )
     .required('Required'),
