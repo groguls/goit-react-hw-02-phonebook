@@ -24,11 +24,11 @@ export class App extends Component {
 
     if (isNameInContacts) {
       alert(`${name} is alredy in contacts`);
-    } else {
-      this.setState(({ contacts }) => ({
-        contacts: [contact, ...contacts],
-      }));
+      return;
     }
+    this.setState(({ contacts }) => ({
+      contacts: [contact, ...contacts],
+    }));
   };
 
   deleteContact = contactId => {

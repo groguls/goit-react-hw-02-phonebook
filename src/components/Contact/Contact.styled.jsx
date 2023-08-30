@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 export const ContactItem = styled.li`
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 4px;
 
   &:nth-child(odd) {
